@@ -1,82 +1,29 @@
-hai hello.Hi, I'm
-Prem Kumar
-AI Engineer & Data Scientist
-I specialize in developing intelligent systems that address real-world challenges through AI and data science. My expertise spans machine learning, deep learning, NLP, RAG, LLMs, and vector databases like Qdrant. I also utilize Power BI, Excel, and SQL for data analysis and visualization, delivering scalable, research-driven AI solutions.
-Building the Future with AI
-With hands-on expertise in LLMs, RAG pipelines, machine learning, and AI system design, I build scalable, end-to-end AI solutions that bridge the gap between research and real-world impact. From vector-based retrieval to production-ready applications, I help organizations unlock smarter workflows, automation, and data-driven innovation.
+hai hello.--- Page 1 ---
+URL: https://ai-entu.onrender.com/
+Title: Prem Kumar - AI Engineer
+Content: Prem Kumar - AI Engineer Prem Kumar Home About Education Work Contact Hi, I'm Prem Kumar AI Engineer & Data Scientist I specialize in developing intelligent systems that address real-world challenges through AI and data science. My expertise spans machine learning, deep learning, NLP, RAG, LLMs, and vector databases like Qdrant. I also utilize Power BI, Excel, and SQL for data analysis and visualization, delivering scalable, research-driven AI solutions Download Resume Contact Me Scroll Down Building the Future with AI With hands-on expertise in LLMs, RAG pipelines, machine learning, and AI system design, I build scalable, end-to-end AI solutions that bridge the gap between research and real-world impact. From vector-based retrieval to production-ready applications, I help organizations unlock smarter workflows, automation, and data-driven innovation. 4+ Months Experience 3+ AI Projects 5+ Technologies What I Do Machine Learning Developing and deploying ML models for predictive analytics, recommendation systems, and automated decision making. Agentic AI Designing autonomous, goal-driven AI agents capable of reasoning, decision-making, and interacting with tools, environments, or APIs to achieve complex tasks using LLMs, RAG pipelines, and vector databases. Data Scientist I turn raw data into insights using machine learning, statistics, and dashboards to support clear, data-driven decision-making. 💬 Chatbot ✖ Send © 2025 Prem Kumar. All rights reserved.
 
-4+Months Experience
-3+AI Projects
-5+Technologies.My Story
-I'm Prem Kumar, an AI Engineer and Data Scientist passionate about building intelligent systems that drive real-world impact. My journey into AI began with a curiosity about how machines can reason, interact, and adapt like humans—which soon evolved into a deep commitment to applied AI innovation.
+--- Page 2 ---
+URL: https://ai-entu.onrender.com/about
+Title: About - Prem Kumar
+Content: About - Prem Kumar Prem Kumar Home About Education Work Contact 💬 Chatbot ✖ Send About Me Discover my journey in artificial intelligence My Story I'm Prem Kumar, an AI Engineer and Data Scientist passionate about building intelligent systems that drive real-world impact. My journey into AI began with a curiosity about how machines can reason, interact, and adapt like humans—which soon evolved into a deep commitment to applied AI innovation. With a solid foundation in computer science, mathematics, and data engineering, I specialize in deploying end-to-end AI solutions. My work spans machine learning, deep learning, NLP, and large language models (LLMs), with hands-on experience implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain, Qdrant, and open-source LLMs. I build and deploy scalable AI applications using Flask, FastAPI, and vector databases to solve domain-specific problems in sectors like education, healthcare, and real estate. I’m passionate about combining data science with practical engineering to make AI accessible, transparent, and effective. When I’m not coding or fine-tuning models, I enjoy mentoring aspiring AI engineers, writing technical content, and exploring open-source projects that push the boundaries of agentic AI. Key Achievements Built and deployed RAG-powered LLM apps using Qdrant and LangChain Created real-time AI dashboards with Power BI and SQL for business analytics Developed and optimized ML pipelines for production environments using FastAPI Led AI research and application development across multiple industry domains Resume View my complete resume with detailed experience, education, and skills. Download Resume My Values Innovation Constantly exploring new technologies and methodologies to stay at the forefront of AI advancement. Ethics Committed to developing responsible AI that respects privacy, fairness, and human values. Collaboration Believing in the power of teamwork and knowledge sharing to achieve extraordinary results. Excellence Striving for the highest quality in every project and continuously improving my skills. © 2025 Prem Kumar. All rights reserved.
 
-With a solid foundation in computer science, mathematics, and data engineering, I specialize in deploying end-to-end AI solutions. My work spans machine learning, deep learning, NLP, and large language models (LLMs), with hands-on experience implementing Retrieval-Augmented Generation (RAG) pipelines using LangChain, Qdrant, and open-source LLMs. I build and deploy scalable AI applications using Flask, FastAPI, and vector databases to solve domain-specific problems in sectors like education, healthcare, and real estate.
+--- Page 3 ---
+URL: https://ai-entu.onrender.com/education
+Title: Education & Skills - Prem Kumar
+Content: Education & Skills - Prem Kumar Prem Kumar Home About Education Work Contact 💬 Chatbot ✖ Send Education & Skills My academic background and technical expertise Education Master of Science in Computer Science Bishop Heber College 2022 - 2024 Specialized in machine learning, deep learning, neural networks, and computer vision. Completed a project on "Parkinson's Disease Prediction using Machine Learning", focusing on accurate diagnosis through feature selection and classification techniques. GPA: 7.53/10.0 Bachelor of Science in Computer Science Bishop Heber College 2019 - 2022 Strong foundation in algorithms, data structures, and web development. Final year project on "On-Road Vehicle Breakdown Assistance" aimed at providing real-time support for stranded vehicles through a web-based solution. GPA: 7.53/10.0 Technical Skills Programming Languages Python JavaScript Java SQL AI/ML Frameworks TensorFlow PyTorch Scikit-learn OpenCV Agentic AI Frameworks & Vector Database Langchain Qdrant Tools & Platforms Docker Git Flask © 2025 Prem Kumar. All rights reserved.
 
-I’m passionate about combining data science with practical engineering to make AI accessible, transparent, and effective. When I’m not coding or fine-tuning models, I enjoy mentoring aspiring AI engineers, writing technical content, and exploring open-source projects that push the boundaries of agentic AI.
-Key Achievements
-Built and deployed RAG-powered LLM apps using Qdrant and LangChain
-Created real-time AI dashboards with Power BI and SQL for business analytics
-Developed and optimized ML pipelines for production environments using FastAPI
-Led AI research and application development across multiple industry domains.
-My Values
-Innovation
-Constantly exploring new technologies and methodologies to stay at the forefront of AI advancement.
+--- Page 4 ---
+URL: https://ai-entu.onrender.com/work
+Title: Work & Projects - Prem Kumar
+Content: Work & Projects - Prem Kumar Prem Kumar Home About Education Work Contact 💬 Chatbot ✖ Send Work Showcase of my professional experience Professional Experience 2025 - Present AI Engineer Digidara Technologies Currently working at Digidara Technologies, where I develop innovative AI solutions. With expertise in machine learning, computer vision, and natural language processing, I focus on creating impactful projects for enterprise and educational sectors. Developed a company website and integrated an AI-powered chatbot for 24/7 customer support and enhanced engagement. Created the Mindmate project, an AI-based platform for student mental health support, offering personalized resources and early intervention tools. Collaborated with product teams to integrate AI features into core platform Python Langchain Docker Vector Database © 2025 Prem Kumar. All rights reserved.
 
-Ethics
-Committed to developing responsible AI that respects privacy, fairness, and human values.
+--- Page 5 ---
+URL: https://ai-entu.onrender.com/contact
+Title: Contact - Prem Kumar
+Content: Contact - Prem Kumar Prem Kumar Home About Education Work Contact 💬 Chatbot ✖ Send Get In Touch Let's discuss how we can work together Let's Connect I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest developments in AI and machine learning. Email premkumar18082002@gmail.com Phone +91 93452 76614 Location Trichy Follow Me GitHub LinkedIn WhatsApp Send Message Full Name * Email Address * Phone Number * Purpose * Select Purpose Job Opportunity Project Collaboration Consulting Speaking Engagement Research Collaboration General Inquiry Other Message Send Message Current Availability Available for new opportunities I'm currently open to exciting AI/ML roles, research collaborations, and consulting opportunities. Feel free to reach out if you have something interesting in mind! Full-time Positions Consulting Projects Research Collaborations Speaking Engagements © 2025 Prem Kumar. All rights reserved.
 
-Collaboration
-Believing in the power of teamwork and knowledge sharing to achieve extraordinary results.
 
-Excellence
-Striving for the highest quality in every project and continuously improving my skills.
-What I Do
-Machine Learning
-Developing and deploying ML models for predictive analytics, recommendation systems, and automated decision making.
-
-Agentic AI
-Designing autonomous, goal-driven AI agents capable of reasoning, decision-making, and interacting with tools, environments, or APIs to achieve complex tasks using LLMs, RAG pipelines, and vector databases.
-
-Data Scientist
-I turn raw data into insights using machine learning, statistics, and dashboards to support clear, data-driven decision-making.
-Education & Skills
-My academic background and technical expertise
-
-Education
-Master of Science in Computer Science
-Bishop Heber College
-2022 - 2024
-Specialized in machine learning, deep learning, neural networks, and computer vision. Completed a project on "Parkinson's Disease Prediction using Machine Learning", focusing on accurate diagnosis through feature selection and classification techniques.
-
-GPA: 7.53/10.0
-Bachelor of Science in Computer Science
-Bishop Heber College
-2019 - 2022
-Strong foundation in algorithms, data structures, and web development. Final year project on "On-Road Vehicle Breakdown Assistance" aimed at providing real-time support for stranded vehicles through a web-based solution.
-
-GPA: 7.53/10.0.
-Technical Skills
-Programming Languages
-Python
-JavaScript
-Java
-SQL
-AI/ML Frameworks
-TensorFlow
-PyTorch
-Scikit-learn
-OpenCV
-Agentic AI Frameworks & Vector Database:Langchain,Qdrant
-Tools & Platforms:Docker,Git,Flask.
-contact details:
-Let's Connect
-I'm always excited to discuss new opportunities, collaborate on interesting projects, or simply chat about the latest developments in AI and machine learning.
-contact details:
-Email:premkumar18082002@gmail.com
-
-Phone number:+91 93452 76614
-
-Location:Trichy.
 Premkumar  +91-9345276614
 #
 premkumar18082002@gmail.com
@@ -87,41 +34,52 @@ Education
 Bishop Heber College, Trichy CGPA: 7.53
 • Bachelor of Science in Computer Science 2019-22
 Bishop Heber College, Trichy CGPA: 7.53
+Work Experience
+• AI Engineer Mar - Present
+Digidara Technologies Pvt Ltd Onsite
+– Machine Learning for data-driven model development and evaluation.
+– Deep Learning with neural networks for classification, prediction, and recognition tasks.
+– Generative AI using LLMs for content creation, summarization, and workflow automation.
+– Agentic AI with LangChain to build goal-driven autonomous agents
+– Project Development using GitHub and Python for end-to-end AI applications.
+– Prompt Engineering RAG (Retrieval-Augmented Generation) using Qdrant with Gemini API or Ollama.
 Project Experience
-• Parkinson Disease Prediction
-Machine learning predicts Parkinson’s disease for early detection and treatment.
-– Parkinson’s disease, marked by the gradual loss of dopamine-producing neurons, can be effectively managed with
-early diagnosis and treatment, leading to a better quality of life for patients.
-– Domain: Machine Learning Technology Used: HTML,CSS,Machine Learning,Flask and Python
-• Online Furniture Shopping Website
-E-commerce platform for convenient online furniture shopping and selection.
-– The website for online furniture purchasing is an e-commerce platform that lets users explore, choose, and buy
-furniture items from the convenience of their own homes.
-– Technology Used: Python, Flask, HTML, CSS, and MySQL.
-• Portfolio
-Creative portfolio demonstrating expertise in web development technologies.
-– Ihavecreated a professional online portfolio utilizing Flask, a Python-based web development framework, to effectively showcase my technical expertise and project experience.
-– Technology Used : Python, Flask, HTML,Bootstrap and CSS
-Internship Experience
-• Python Developer Jun - Sep 2024
-Nucaza Innovation Pvt Ltd Online
-– During this training, I acquired knowledge and practical experience in Python frameworks, with a focus on Flask
-and Django.
-– Built an online furniture purchasing website with Flask, a Python web framework.
-– Developed and contributed to real-time projects, taking a major role in front-end development using HTML, CSS,
-and Bootstrap, while ensuring a seamless user experience.
-– Implemented back-end functionalities and automation using Python, enhancing application performance and integrating with various APIs and databases.
-• WebDevelopment
-Pantech ProEd Private Ltd Online
-– Gained proficiency in HTML and CSS, enhancing front-end development skills to create responsive and userfriendly web applications during the internship.
-– Developed expertise in MySQL for effective database management, including data modeling, querying, and optimizing database performance in web development projects.
+• Student Mental Health Support Chatbot 2025
+Built AI chatbot for personalized mental health support.
+– Built an agentic AI system using LangChain and Mistral model, leveraging Qdrant for vector storage to provide
+personalized responses for student mental health queries, achieving 90 percentage user satisfaction.
+– Implemented Retrieval-Augmented Generation (RAG) with user login credentials to retrieve previous chat history
+from Qdrant, enabling the LLM to ask users if provided tips were useful, enhancing personalized interaction and
+feedback collection.
+– Technology Used: Python, Flask, LangChain, LLM , Vector Database(Qdrant), RAG
+• AI-Powered Chatbot for Portfolio Website 2025
+Built AI chatbot, boosting portfolio engagement.
+– Developed a full-stack chatbot using Python, Flask, and LangChain for buffer memory, integrating Gemini API
+for natural language generation, improving user engagement by 40 percentage.
+– Implemented prompt engineering to refine LLM outputs, ensuring accurate and concise responses for diverse user
+queries.
+– Utilized GitHub for collaborative development and version control, streamlining deployment of updates.
+– Technology Used : Python, Flask,HTML,CSS,JS and LLM,LangChain
+Portfolio: https://ai-entu.onrender.com/
+• Student Mental Health Analysis with Data Science 2025
+Data Science
+– Conducted EDA and preprocessing on survey data using Python and Pandas to identify mental health patterns.
+– Built a Random Forest Classifier to predict mental health status, achieving high accuracy in risk identification.
+– Designed an interactive Power BI dashboard visualizing mental health trends by gender, age, and academic pressure.
+– Technology Used: Python, Pandas, Scikit-learn, MySQL, Power BI
+Linkedin: ViewDashboard
 Technical Skills and Interests
-Languages: Python, HTML+CSS, Java
-Libraries : Python Libraries, Numpy, Pandas
-Web Dev Tools: VScode, Github
-Frameworks: Flask, Bootstrap
-Cloud/Databases:MongoDb, Relational Database(mySql)
-Relevent Coursework: Operating Systems, Object Oriented Programming, Database Management System, Software
-Engineer.
-Areas of Interest: Python Developer, Machine Learning Engineer , Full Stack Developer
+Languages: Python, HTML+CSS+JS
+Libraries : NumPy, Pandas, PyTorch, Matplotlib, TensorFlow,scikit-learn
+Web Dev Tools: VScode, Microsoft Power BI, Github, Git, Docker
+Frameworks: Flask, LangChain
+Cloud/Databases: Relational Database(mySql) , Vector Database(Qdrant)
+Areas of Interest: Python Developer, Machine Learning Engineer , Full Stack Developer, AI Engineer, Data Scientist,
+Data Analyst, Full Stack Developer
 Soft Skills: Problem Solving, Self-learning, Quick Learning, Adaptability
+resume pdf link:https://drive.google.com/file/d/1N3ilGXy9HWBDVa3YTlMHx9-9vEi5jo2Q/view?usp=sharing
+father name:M Balasubramaniyan
+Mother name:B Palaniyammal
+Brother name:Dhilip kumar
+Bike name:Night fury 
+date of birth:18-08-2002
