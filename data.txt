@@ -77,7 +77,7 @@ Cloud/Databases: Relational Database(mySql) , Vector Database(Qdrant)
 Areas of Interest: Python Developer, Machine Learning Engineer , Full Stack Developer, AI Engineer, Data Scientist,
 Data Analyst.
 Soft Skills: Problem Solving, Self-learning, Quick Learning, Adaptability
-resume pdf link:https://drive.google.com/file/d/1N3ilGXy9HWBDVa3YTlMHx9-9vEi5jo2Q/view?usp=sharing
+resume pdf link:https://drive.google.com/file/d/13xKReevvCZVQpS64UyHU_IOJHWRdvQXD/view?usp=sharing
 father name:M Balasubramaniyan
 father job:Farmer
 Mother name:B Palaniyammal
