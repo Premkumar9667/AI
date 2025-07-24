@@ -25,7 +25,7 @@ Content: Contact - Prem Kumar Prem Kumar Home About Education Work Contact 💬 
 
 
 Premkumar  +91-9345276614
-#
+AI Engineer | Data Scientist | Python Developer
 premkumar18082002@gmail.com
 Master of Science § GitHub Profile
 Bishop Heber College, Trichy ï LinkedIn Profile
@@ -75,11 +75,19 @@ Web Dev Tools: VScode, Microsoft Power BI, Github, Git, Docker
 Frameworks: Flask, LangChain
 Cloud/Databases: Relational Database(mySql) , Vector Database(Qdrant)
 Areas of Interest: Python Developer, Machine Learning Engineer , Full Stack Developer, AI Engineer, Data Scientist,
-Data Analyst, Full Stack Developer
+Data Analyst.
 Soft Skills: Problem Solving, Self-learning, Quick Learning, Adaptability
-resume pdf link:https://drive.google.com/file/d/1N3ilGXy9HWBDVa3YTlMHx9-9vEi5jo2Q/view?usp=sharing
+resume pdf link:https://drive.google.com/file/d/13xKReevvCZVQpS64UyHU_IOJHWRdvQXD/view?usp=sharing
 father name:M Balasubramaniyan
+father job:Farmer
 Mother name:B Palaniyammal
+mother job:House wife
 Brother name:Dhilip kumar
+brother married status: yes, dhilipkumar married.
+brother wife name : Dhanushya
 Bike name:Night fury 
+Bike Brand: yamaha MT15(Black)
 date of birth:18-08-2002
+my professional summary:
+Aspiring AI Engineer and Data Scientist with hands-on experience in building agentic AI chatbots, mental health analytics platforms, and full-stack applications using Python, LangChain, LLMs, and Flask. Skilled in both machine learning and deep learning, with strong project ownership and deployment skills. Passionate about solving real-world problems with AI.
+
