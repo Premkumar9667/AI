@@ -32,7 +32,7 @@ app.config['MAIL_DEFAULT_SENDER'] = os.environ.get('MAIL_USERNAME')
 mail = Mail(app)
 
 # Set the Gemini API key
-os.environ["GOOGLE_API_KEY"] = "AIzaSyAUdOC50Kxseb1bg9MOC8__nGsla7OXu14"
+os.environ["GOOGLE_API_KEY"] = "AIzaSyAWmoqZgUaKJEsDD9H8fPzyfPgJogsX9DQ"
 
 # Initialize the Gemini LLM
 llm = ChatGoogleGenerativeAI(
@@ -198,3 +198,4 @@ def chat():
 
 if __name__ == '__main__':
     app.run(host='127.0.0.1', port=5000, debug=True)
+
