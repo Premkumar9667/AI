@@ -118,11 +118,14 @@ prompt = ChatPromptTemplate.from_messages([
     ("human", "{input}")
 ])
 
+
 # Create the document chain
 document_chain = create_stuff_documents_chain(llm, prompt)
 
-# Create the retrieval chain
-rag_chain = create_retrieval_chain(retriever, document_chain)
+# Only create the retrieval chain if retriever is available
+rag_chain = None
+if retriever is not None:
+    rag_chain = create_retrieval_chain(retriever, document_chain)
 
 # Initialize conversation memory
 memory = ConversationBufferMemory(
@@ -213,7 +216,7 @@ def chat():
             app.logger.error("No documents loaded; data.txt likely missing.")
             return jsonify({"response": "Error: data.txt not found in the server directory.", "status": 500}), 500
 
-        if retriever is None:
+        if retriever is None or rag_chain is None:
             return jsonify({"response": "Knowledge base not indexed yet. Please run build_index.py once to generate embeddings.", "status": 503}), 503
 
         data = request.get_json()
@@ -241,7 +244,4 @@ def chat():
 
 if __name__ == '__main__':
     app.logger.info("Startup complete. If chatbot retrieval fails, run: python build_index.py")
-
-   
-    port = int(os.environ.get("PORT", 5000))
-    app.run(host='0.0.0.0', port=port)
+    app.run(host='127.0.0.1', port=5000, debug=True)
