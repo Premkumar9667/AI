@@ -1,0 +1,12 @@
+{
+  "script_version": 2,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "backend": "local",
+  "documents": {
+    "data.txt": {
+      "mtime": 1753261970.0,
+      "size": 10514
+    }
+  },
+  "built_at": 1757477086.433859
+}
