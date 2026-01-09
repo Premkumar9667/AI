@@ -3,6 +3,6 @@ Flask-Mail>=0.9.1
 gunicorn>=23.0.0
 email-validator>=2.1.0.post1
 python-dotenv>=1.0.0
-langchain>=0.3.0
+langchain==0.1.0
 langchain-google-genai>=2.0.0
 pickle-mixin  # for pickle, if needed in some environments
