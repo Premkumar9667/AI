@@ -84,5 +84,11 @@ def chat():
         app.logger.error(f"Chat error: {e}")
         return jsonify({"response": "Sorry, I encountered an error.", "status": 500})
 
+# ... (all your imports and logic)
+
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port=5000)
+    # Render provides a PORT environment variable. 
+    # Use 0.0.0.0 to allow external traffic.
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port)
+
