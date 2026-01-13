@@ -1,11 +1,17 @@
-Flask>=3.0.0
-Flask-Mail>=0.9.1
-gunicorn>=23.0.0
-email-validator>=2.1.0.post1
-python-dotenv>=1.0.0
-langchain==0.1.0
-langchain-google-genai>=2.0.0
+# Web Framework & Server
+Flask==3.1.2
+Flask-Mail==0.10.0
+gunicorn==23.0.0
+email-validator==2.1.0.post1
+python-dotenv==1.0.1
+
+# AI & LLM (Groq Backend)
+langchain==1.2.3
+langchain-community==0.3.14
 langchain-groq==1.1.1
+groq==1.0.0
+
+# Embeddings & Vector Store (Local Backend)
 langchain-huggingface==1.2.0
 sentence-transformers==5.2.0
-pickle-mixin  # for pickle, if needed in some environments
+faiss-cpu==1.9.0
