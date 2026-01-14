@@ -1,17 +1,17 @@
-# Web Framework & Server
+# Web Framework & Server (Pinned for stability)
 Flask==3.1.2
 Flask-Mail==0.10.0
 gunicorn==23.0.0
 email-validator==2.1.0.post1
 python-dotenv==1.0.1
 
-# AI & LLM (Groq Backend)
-langchain==0.3.14
-langchain-community==0.3.14
-langchain-groq==1.1.1
-groq==0.31.0
+# AI & LLM (No versions here to let pip solve the conflict)
+langchain
+langchain-community
+langchain-groq
+groq
 
-# Embeddings & Vector Store (Local Backend)
-langchain-huggingface==1.2.0
+# Embeddings & Vector Store
+langchain-huggingface
 sentence-transformers==5.2.0
 faiss-cpu==1.13.2
