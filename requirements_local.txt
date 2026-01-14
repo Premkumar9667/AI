@@ -9,7 +9,7 @@ python-dotenv==1.0.1
 langchain==0.3.14
 langchain-community==0.3.14
 langchain-groq==1.1.1
-groq==1.0.0
+groq==0.31.0
 
 # Embeddings & Vector Store (Local Backend)
 langchain-huggingface==1.2.0
