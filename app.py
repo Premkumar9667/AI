@@ -6,11 +6,13 @@ from flask import Flask, render_template, request, jsonify
 from flask_mail import Mail, Message
 from dotenv import load_dotenv
 
-# Modern LangChain v0.3+ Imports
+# CORRECT MODERN IMPORTS (v0.3.x+)
+import langchain
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.chains.retrieval import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+# We import these directly from the sub-packages to avoid the ModuleNotFoundError
+from langchain.chains import retrieval
+from langchain.chains import combine_documents
 from langchain_core.prompts import ChatPromptTemplate
 
 load_dotenv()
@@ -20,91 +22,73 @@ logger = logging.getLogger("app")
 app = Flask(__name__)
 app.secret_key = os.getenv("SESSION_SECRET", "dev-secret-key")
 
-# --- 1. Initialize Index (Ensures cache exists on Render) ---
-def initialize_index():
-    # If the cache folder doesn't exist, run the builder
-    if not os.path.exists('cache'):
-        logger.info("Cache folder not found. Running build_index.py...")
+# --- 1. FORCE BUILD INDEX ON STARTUP ---
+# This ensures that even if Render wipes the folder, we build it immediately.
+def ensure_index():
+    cache_path = os.path.join(os.getcwd(), 'cache')
+    index_file = os.path.join(cache_path, 'vector_store.pkl')
+    
+    if not os.path.exists(index_file):
+        logger.info("Index file missing. Running build_index.py...")
         try:
+            # This runs your build script automatically
             subprocess.run(["python", "build_index.py"], check=True)
-            logger.info("Index built successfully!")
+            logger.info("Build script finished successfully.")
         except Exception as e:
-            logger.error(f"Error building index: {e}")
-    else:
-        logger.info("Index found in cache.")
+            logger.error(f"Failed to run build_index.py: {e}")
 
-initialize_index()
+ensure_index()
 
-# --- 2. Mail Config ---
-app.config.update(
-    MAIL_SERVER=os.getenv('MAIL_SERVER', 'smtp.gmail.com'),
-    MAIL_PORT=int(os.getenv('MAIL_PORT', 587)),
-    MAIL_USE_TLS=True,
-    MAIL_USERNAME=os.getenv('MAIL_USERNAME'),
-    MAIL_PASSWORD=os.getenv('MAIL_PASSWORD')
+# --- 2. AI CONFIGURATION ---
+llm = ChatGroq(
+    groq_api_key=os.getenv("GROQ_API_KEY"), 
+    model_name="llama-3.1-8b-instant", 
+    temperature=0.6
 )
-mail = Mail(app)
+embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
-# --- 3. AI Configuration ---
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-MODEL_NAME = os.getenv("MODEL_NAME", "llama-3.1-8b-instant")
-EMBED_MODEL_NAME = os.getenv("EMBEDDING_MODEL_NAME", "sentence-transformers/all-MiniLM-L6-v2")
-
-llm = ChatGroq(groq_api_key=GROQ_API_KEY, model_name=MODEL_NAME, temperature=0.6)
-embeddings = HuggingFaceEmbeddings(model_name=EMBED_MODEL_NAME)
-
-# --- 4. Vector Store Loading ---
-VECTOR_STORE_PATH = os.path.join("cache", "vector_store.pkl")
-
+# --- 3. LOAD RETRIEVER ---
 def get_retriever():
-    if os.path.exists(VECTOR_STORE_PATH):
-        try:
-            with open(VECTOR_STORE_PATH, "rb") as f:
-                vector_store = pickle.load(f)
-            return vector_store.as_retriever(search_kwargs={"k": 2})
-        except Exception as e:
-            logger.error(f"Failed to load pickle: {e}")
+    path = "cache/vector_store.pkl"
+    if os.path.exists(path):
+        with open(path, "rb") as f:
+            vector_store = pickle.load(f)
+        return vector_store.as_retriever(search_kwargs={"k": 2})
     return None
 
 retriever = get_retriever()
 
-# --- 5. Clean RAG Chain (No History) ---
-# System prompt focuses only on the context provided by your data.txt
+# --- 4. CREATE RAG CHAIN ---
+system_prompt = "You are Premkumar's AI. Answer using context: {context}"
 prompt = ChatPromptTemplate.from_messages([
-    ("system", "You are Premkumar AI Assistant. Use the context to answer. If not in context, say you don't know.\n\nContext: {context}"),
+    ("system", system_prompt),
     ("human", "{input}")
 ])
 
-document_chain = create_stuff_documents_chain(llm, prompt)
-rag_chain = create_retrieval_chain(retriever, document_chain) if retriever else None
+# Use the loaded sub-modules to create the chain
+combine_docs_chain = combine_documents.create_stuff_documents_chain(llm, prompt)
+rag_chain = retrieval.create_retrieval_chain(retriever, combine_docs_chain) if retriever else None
 
-# --- 6. Routes ---
+# --- 5. ROUTES ---
 @app.route('/')
-def home(): 
-    return render_template('home.html')
+def home(): return render_template('home.html')
 
 @app.route('/chatbot')
-def chatbot(): 
-    return render_template('chatbot.html')
+def chatbot(): return render_template('chatbot.html')
 
 @app.route('/chat', methods=['POST'])
 def chat():
     if not rag_chain:
-        return jsonify({"response": "Knowledge base not ready.", "status": 503})
-    
-    data = request.get_json()
-    user_input = data.get('message', '')
+        return jsonify({"response": "Knowledge base not ready. Please refresh in a minute.", "status": 503})
     
     try:
-        # Straightforward RAG call without memory variables
+        user_input = request.get_json().get('message', '')
         response = rag_chain.invoke({"input": user_input})
         return jsonify({"response": response["answer"], "status": 200})
     except Exception as e:
         logger.error(f"Chat error: {e}")
-        return jsonify({"response": "Sorry, I encountered an error.", "status": 500})
+        return jsonify({"response": "Error processing request.", "status": 500})
 
-# --- 7. Deployment Entry Point ---
 if __name__ == '__main__':
-    # Bind to Render's dynamic port
     port = int(os.environ.get("PORT", 10000))
     app.run(host='0.0.0.0', port=port)
