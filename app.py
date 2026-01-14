@@ -19,6 +19,27 @@ logging.basicConfig(level=logging.INFO)
 
 app = Flask(__name__)
 app.secret_key = os.getenv("SESSION_SECRET", "dev-secret-key")
+import os
+import subprocess
+
+# This runs BEFORE the Flask app starts
+def initialize_index():
+    # Check if your index folder (e.g., 'faiss_index') already exists
+    if not os.path.exists('faiss_index'):
+        print("Index not found. Running build_index.py...")
+        try:
+            # Runs your script as if you typed it in the terminal
+            subprocess.run(["python", "build_index.py"], check=True)
+            print("Index built successfully!")
+        except Exception as e:
+            print(f"Error building index: {e}")
+    else:
+        print("Index already exists. Skipping build.")
+
+# Call the function
+initialize_index()
+
+# ... Your existing app = Flask(__name__) code ...
 
 # --- Mail Config ---
 app.config.update(
@@ -91,5 +112,6 @@ if __name__ == '__main__':
     # Use 0.0.0.0 to allow external traffic.
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
 
 
