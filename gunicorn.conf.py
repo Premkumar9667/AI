@@ -1,12 +1,9 @@
 import os
 
-# Render provides the PORT environment variable (usually 10000)
+# Use the PORT environment variable Render provides
 port = os.environ.get("PORT", "10000")
 bind = f"0.0.0.0:{port}"
 
-workers = 2 
-threads = 4 
-timeout = 120 
-loglevel = "info" 
-accesslog = "-" 
-errorlog = "-"
+workers = 1  # Reduce to 1 worker to save RAM on the Free Tier
+threads = 2
+timeout = 120
