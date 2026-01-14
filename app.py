@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 from langchain_groq import ChatGroq
 from langchain_huggingface import HuggingFaceEmbeddings
 from langchain_core.prompts import ChatPromptTemplate
-from langchain.memory import ConversationBufferMemory
+# from langchain.memory import ConversationBufferMemory
 from langchain.chains import create_retrieval_chain
 from langchain.chains.combine_documents import create_stuff_documents_chain
 
@@ -58,7 +58,7 @@ prompt = ChatPromptTemplate.from_messages([
 
 document_chain = create_stuff_documents_chain(llm, prompt)
 rag_chain = create_retrieval_chain(retriever, document_chain) if retriever else None
-memory = ConversationBufferMemory(memory_key="history", input_key="input", output_key="answer", return_messages=True)
+# memory = ConversationBufferMemory(memory_key="history", input_key="input", output_key="answer", return_messages=True)
 
 # --- Routes ---
 @app.route('/')
@@ -91,4 +91,5 @@ if __name__ == '__main__':
     # Use 0.0.0.0 to allow external traffic.
     port = int(os.environ.get("PORT", 5000))
     app.run(host='0.0.0.0', port=port)
+
 
